@@ -19,7 +19,16 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
-  
+  li {
+    list-style: none;
+  }
+
+  hr {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
 `;
 
 export default GlobalStyles;
