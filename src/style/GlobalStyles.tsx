@@ -22,13 +22,6 @@ const GlobalStyles = createGlobalStyle`
   li {
     list-style: none;
   }
-
-  hr {
-    margin: 0;
-    padding: 0;
-    width: 90%;
-    margin: 0 auto;
-  }
 `;
 
 export default GlobalStyles;

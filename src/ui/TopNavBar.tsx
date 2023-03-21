@@ -1,27 +1,39 @@
-import { NavBarWrapper } from '../style/Wrappers';
 import brandLogo from '../assets/icons/logo.svg';
 import cartIcon from '../assets/icons/icon-cart.svg';
 import imageAvatar from '../assets/images/image-avatar.svg';
 import { NavMenuList } from '../style/Navigation';
+import { Avatar, BrandLogo, CartIcon } from '../style/Images';
+import { CartBadge, NavHorizontalLine } from '../style/Utils';
+import {
+  CartIconWrapper,
+  NavBarWrapper,
+  SectionWrapper,
+} from '../style/Wrappers';
 
 const TopNavBar = () => {
   return (
     <>
       <NavBarWrapper>
-        <img src={brandLogo} alt="brand-logo" width="160px" height="25px" />
-        <NavMenuList>
-          <li>Collections</li>
-          <li>Men</li>
-          <li>Women</li>
-          <li>About</li>
-          <li>Contact</li>
-        </NavMenuList>
-        <img src={cartIcon} alt="cart-icon" />
-        <img src={imageAvatar} alt="cart-icon" width="50px" />
+        <SectionWrapper>
+          <BrandLogo src={brandLogo} alt="brand-logo" />
+          <NavMenuList>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </NavMenuList>
+        </SectionWrapper>
+        <SectionWrapper>
+          <CartIconWrapper>
+            <CartIcon src={cartIcon} alt="cart-icon" />
+            <CartBadge>{3}</CartBadge>
+          </CartIconWrapper>
+          <Avatar src={imageAvatar} alt="cart-icon" width="50px" />
+        </SectionWrapper>
       </NavBarWrapper>
-      <hr />
+      <NavHorizontalLine />
     </>
   );
 };
-
 export default TopNavBar;
