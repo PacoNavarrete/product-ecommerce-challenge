@@ -8,7 +8,7 @@ export const SectionWrapper = styled.div`
 
 export const NavBarWrapper = styled.div`
   width: 80%;
-  height: 120px;
+  height: 95px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;

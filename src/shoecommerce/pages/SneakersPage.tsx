@@ -1,5 +1,10 @@
-const Sneakers = () => {
-  return <h1>Product pages</h1>;
+
+const SneakersPage = () => {
+  return (
+    <>
+      <h1>Sneakers Page</h1>
+    </>
+  );
 };
 
-export default Sneakers;
+export default SneakersPage;

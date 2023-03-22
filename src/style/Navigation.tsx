@@ -19,7 +19,7 @@ export const NavMenuList = styled.ul`
     font-size: 14px;
   }
   li:hover {
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid ${props => props.theme.colors.primary.orange};
     padding-top: 2px;
     cursor: pointer;
     color: ${(props) => props.theme.colors.neutral.black};
